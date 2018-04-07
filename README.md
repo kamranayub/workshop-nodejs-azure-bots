@@ -52,3 +52,20 @@ From Microsoft:
   - (optional) Add "publish.js" to .gitignore since it contains your SCM password
 - Open folder in an editor
   - Visual Studio Code or your favorite
+- Walkthrough app.js
+- Modify Greeting dialog
+
+## 03 - LUIS
+
+- Log in to https://luis.ai (same as Azure account)
+- Overview of Intents, Utterances, Entities, and Conversations
+- Walkthrough LUIS [tutorial](https://docs.microsoft.com/en-us/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-luis)
+
+
+
+# Resources
+
+The following resources were used to build this workshop:
+
+- https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart
+- https://docs.microsoft.com/en-us/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-luis
