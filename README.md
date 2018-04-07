@@ -60,8 +60,22 @@ From Microsoft:
 - Log in to https://luis.ai (same as Azure account)
 - Overview of Intents, Utterances, Entities, and Conversations
 - Walkthrough LUIS [tutorial](https://docs.microsoft.com/en-us/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-luis)
+- Train LUIS on Notes
+- Publish changes
+- Publish bot changes
+- Try some variations of "read aloud" to see what works and what doesn't
+  - In LUIS -> Review Endpoint Utterances
+  - Add the utterances that matched successfully
+- Train and publish LUIS model again
+- Try again
 
+## 04 - Channels
 
+- In Azure portal, look at hooking up bot to a 3rd party service
+  in channels
+- Configure Skype channel (free with Microsoft account)
+- Save the channel
+- Click Skype join link to add bot to contacts
 
 # Resources
 

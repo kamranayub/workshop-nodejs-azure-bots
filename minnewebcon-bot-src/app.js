@@ -275,3 +275,12 @@ bot
   .cancelAction("cancelReadNote", "Ok.", {
     matches: /^(cancel|nevermind)/i
   });
+
+// Helper function to count the number of notes stored in session.userData.notes
+function noteCount(notes) {
+  var i = 0;
+  for (var name in notes) {
+    i++;
+  }
+  return i;
+}
