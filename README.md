@@ -29,6 +29,8 @@ From Microsoft:
 
 ## 00 - Introduction
 
+[Slides](https://slides.com/kamranayub/node-js-bots-with-azure-workshop)
+
 - What is a bot? Why would I want to make one?
 - What does Azure provide to make bots?
 
@@ -54,6 +56,21 @@ From Microsoft:
   - Visual Studio Code or your favorite
 - Walkthrough app.js
 - Modify Greeting dialog
+- Publish back to Azure
+  - `node publish.js`
+
+To test bot locally: 
+
+- Download emulator: https://github.com/Microsoft/BotFramework-Emulator/releases
+- Get environment variables (Azure Portal -> Bot -> App Settings):
+  - Microsoft App ID (`MicrosoftAppId`)
+  - Microsoft App Password (`MicrosoftAppPassword`)
+  - Table storage connection string (`AzureWebJobsStorage`)
+  - LUIS App Id (`LuisAppId`)
+  - LUIS API key (`LuisAPIKey`)
+- Set environment vars in shell (easiest is to make a script!)
+- Run `npm install`
+- Run your script or `node app.js`
 
 ## 03 - LUIS
 
@@ -77,9 +94,16 @@ From Microsoft:
 - Save the channel
 - Click Skype join link to add bot to contacts
 
+## 05 - Stretch Goals
+
+- Add suggested actions to the greeting (https://docs.microsoft.com/en-us/azure/bot-service/nodejs/bot-builder-nodejs-send-suggested-actions)
+- Add a new intent and dialog (e.g. CopyNote)
+
 # Resources
 
 The following resources were used to build this workshop:
 
+- https://docs.microsoft.com/en-us/azure/bot-service/
 - https://docs.microsoft.com/en-us/azure/bot-service/bot-service-quickstart
+- https://docs.microsoft.com/en-us/azure/bot-service/nodejs/bot-builder-nodejs-overview
 - https://docs.microsoft.com/en-us/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-luis

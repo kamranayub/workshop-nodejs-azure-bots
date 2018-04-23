@@ -42,9 +42,20 @@ var tableStorage = new botbuilder_azure.AzureBotStorage(
 // This default message handler is invoked if the user's utterance doesn't
 // match any intents handled by other dialogs.
 var bot = new builder.UniversalBot(connector, function(session, args) {
+  
+  // Send a basic greeting
   session.send(
     "Hi... I'm the note bot sample. I can create new notes, read saved notes to you and delete notes."
   );
+
+  // TODO: Suggest actions!
+  // https://docs.microsoft.com/en-us/azure/bot-service/nodejs/bot-builder-nodejs-send-suggested-actions
+  // const greeting = new builder.Message(session)
+  //     .text("...")
+  //     .suggestedActions(
+  //         builder.SuggestedActions.create(...)
+  //)
+  // session.send(greeting);
 
   // If the object for storing notes in session.userData doesn't exist yet, initialize it
   if (!session.userData.notes) {
