@@ -6,9 +6,11 @@ Originally given at MinneWebCon 2018 on April 24.
 
 Build a basic bot that accepts a user question, parses it, and returns a response.
 
+We will:
+
 - Leverage Azure Bot Service
-- Leverage Bot Builder SDK
-- Leverage Cognitive Services
+- Leverage Bot Builder SDK with Node.js
+- Leverage Cognitive Services (LUIS)
 
 ## Cost and Pricing
 
@@ -22,20 +24,29 @@ From Microsoft:
 
 ## Prerequisites
 
-- JavaScript experience
-- A favorite editor
-- Node.js
+- (Some) JavaScript experience
+- A favorite editor (Recommended: [VS Code](https://code.visualstudio.com))
+- Node.js 8+ (`node -v`)
+- NPM 5+ (`npm -v`)
 - Azure account
 
-## 00 - Introduction
+# Agenda
+
+These are estimates. The workshop is designed for 3 hours with room for working through the hands-on tutorials and presenting from the instructor.
+
+## 00 - Introduction - 15 minutes
 
 [Slides](https://slides.com/kamranayub/node-js-bots-with-azure-workshop)
 
+- Who am I?
 - What is a bot? Why would I want to make one?
 - What does Azure provide to make bots?
 
-## 01 - Hello World
+## 01 - Hello World - 20 minutes
 
+- System check!
+  - `node -v`
+  - `npm -v`
 - Sign up for a [free Azure account](https://azure.microsoft.com/en-us/free/)
 - Create a new Web App bot
 - Select F0 pricing (Free!)
@@ -43,10 +54,13 @@ From Microsoft:
   - Node.js
   - Language Understanding
 - Standard options for the rest
+  - Storage option will cost < $1
 - Test in Web Chat
+  - *Trouble?* Refresh the portal after signing in, seems to make it work better!
 - Trigger the Greeting intent
+  - Type `hi!` or `hello`
 
-## 02 - Hello Yourself!
+## 02 - Hello Yourself! - 40 minutes
 
 - Download the bot locally to your machine
   - Build > Download
@@ -72,7 +86,7 @@ To test bot locally:
 - Run `npm install`
 - Run your script or `node app.js`
 
-## 03 - LUIS
+## 03 - LUIS - 45 minutes
 
 - Log in to https://luis.ai (same as Azure account)
 - Overview of Intents, Utterances, Entities, and Conversations
@@ -86,7 +100,7 @@ To test bot locally:
 - Train and publish LUIS model again
 - Try again
 
-## 04 - Channels
+## 04 - Channels - 15 minutes
 
 - In Azure portal, look at hooking up bot to a 3rd party service
   in channels
@@ -94,7 +108,7 @@ To test bot locally:
 - Save the channel
 - Click Skype join link to add bot to contacts
 
-## 05 - Stretch Goals
+## 05 - Stretch Goals - 20+ mins
 
 - Add suggested actions to the greeting (https://docs.microsoft.com/en-us/azure/bot-service/nodejs/bot-builder-nodejs-send-suggested-actions)
 - Add a new intent and dialog (e.g. CopyNote)
