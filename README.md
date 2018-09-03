@@ -2,6 +2,8 @@
 
 Originally given at MinneWebCon 2018 on April 24.
 
+[Slides](https://slides.com/kamranayub/node-js-bots-with-azure-workshop-6)
+
 ## Workshop Goal
 
 Build a basic bot that accepts a user question, parses it, and returns a response.
